@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airport.Reis">
+   <children>
+      <Label layoutX="273.0" layoutY="14.0" text="Рейсы">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="n" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#nazad" style="-fx-background-color: #33CCFF; -fx-background-radius: 0; -fx-border-radius: 0;" text="&lt;-" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="527.0" layoutY="13.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: #33CCFF; -fx-background-radius: 0; -fx-border-radius: 0;" text="Выход" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="57.0" layoutY="62.0" prefHeight="297.0" prefWidth="503.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="42.0" text="id" />
+          <TableColumn fx:id="samolet" prefWidth="93.0" text="Самолет" />
+            <TableColumn fx:id="otkyda" prefWidth="93.0" text="Откуда" />
+            <TableColumn fx:id="kyda" prefWidth="93.0" text="Куда" />
+            <TableColumn fx:id="datea" prefWidth="93.0" text="Дата" />
+            <TableColumn fx:id="timee" prefWidth="93.0" text="Время" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

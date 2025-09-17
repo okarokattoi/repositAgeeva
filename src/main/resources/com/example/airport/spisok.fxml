@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airport.Spisok">
+   <children>
+      <Label layoutX="206.0" layoutY="14.0" text="Список пользователй">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="n" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#nazad" style="-fx-background-color: #33CCFF; -fx-background-radius: 0; -fx-border-radius: 0;" text="&lt;-" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="e" layoutX="527.0" layoutY="13.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: #33CCFF; -fx-background-radius: 0; -fx-border-radius: 0;" text="Выход" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="33.0" layoutY="53.0" onSort="#tabl" prefHeight="266.0" prefWidth="536.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="38.0" text="id" />
+          <TableColumn fx:id="login" prefWidth="83.0" text="Логин" />
+            <TableColumn fx:id="pass" prefWidth="81.0" text="Пароль" />
+            <TableColumn fx:id="fio" prefWidth="131.0" text="ФИО" />
+            <TableColumn fx:id="pocht" prefWidth="102.0" text="Почта" />
+            <TableColumn fx:id="dolgnost" prefWidth="100.0" text="Должность" />
+        </columns>
+      </TableView>
+      <Button fx:id="del" layoutX="265.0" layoutY="336.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #33CCFF; -fx-background-radius: 0; -fx-border-radius: 0;" text="Удалить" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
